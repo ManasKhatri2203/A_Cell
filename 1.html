@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Institute of Technology Indore</title>
+    <link rel="stylesheet" href="1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="top-navigation">
+      <a href="#">HOME</a>
+      <a href="#">EVENTS</a>
+      <a href="#">SPEAKERS</a>
+      <a href="#">CONTACT US</a>
+      <a href="#">LOGIN/SIGNUP</a>
+    </div>
+
+    <div class="aa">
+      <header>
+        <img src="./logo.png" alt="IIT Indore Logo" width="50" height="50" />
+        <h1 style="display: inline">Indian Institute of Technology Indore</h1>
+      </header>
+    </div>
+    <div class="slider-container">
+      <div class="wrapper slider">
+        <img src="./t1673345218_ggXkRuGqy7.jpg" alt="Alumni Images" />
+        <img src="./t1696317160_bWFB2yunc7.jpg" alt="Alumni Images" />
+        <img src="./abc.jpg" alt="Alumni Images" />
+      </div>
+      <div class="login-block">
+        <h2>Login</h2>
+        <form>
+          <div class="input-group">
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Password" />
+          </div>
+          <button>Login</button>
+        </form>
+      </div>
+      <button class="prev-button" aria-hidden="true">&lt;</button>
+      <button class="next-button" aria-hidden="true">&gt;</button>
+    </div>
+    <div class="headdd">
+        <h1>IIT INDORE ALUMNI PLATFORM</h1>
+    </div>
+      <div class="layer">
+        <div class="section tee a1">
+          <h2>ALUMNI DIRECTORY</h2>
+          <p>
+            Explore IIT Indore Complete Alumni Directory & connect with alumni
+            with your Interests & Domain
+          </p>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+
+        <div class="section tee a2">
+          <h2>YOUR BATCHMATES</h2>
+          <p>
+            View Our Exclusive Batchmates Directory to know about whereabouts of
+            your batchmates
+          </p>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+
+        <div class="section tee a3">
+          <h2>ALUMNI IN YOUR CITY</h2>
+          <p>
+            Find Alumni living in your city & be a part of IIT Indore meetups in
+            your cities
+          </p>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+
+        <div class="section tee a4">
+          <h2>YOUR ALUMNI PROFILE</h2>
+          <p>
+            Create & Complete your Alumni Profile & remain connected with all
+            opportunities matching your interest
+          </p>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+        </div>
+    </div>
+    </div>
+    <section id="about">
+        <h1 class="abc">Our Mission</h1>
+        <div class="mission-container">
+          <div class="mission-box">
+            <h2>Facilitate Alumni Engagement</h2>
+          </div>
+          <div class="mission-box">
+            <h2>Mentorship Programs</h2>
+          </div>
+          <div class="mission-box">
+            <h2>Career Development</h2>
+          </div>
+          <div class="mission-box">
+            <h2>Community Building</h2>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+
+    <section id="team">
+        <h2>Meet the Team</h2>
+        <p>
+            Our dedicated team of volunteers and staff work tirelessly to make the Alumni Cell a success.
+            They bring a wealth of experience and enthusiasm to the table, and they are always eager to hear from you.
+        </p>
+        <div class="team-members">
+            <div class="team-member">
+                <div class="member-box">
+                    <div class="member-image-placeholder"></div>
+                    <div class="member-details">
+                        <h3>Team Member 1</h3>
+                        <p>Description of Team Member 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-box">
+                    <div class="member-image-placeholder"></div>
+                    <div class="member-details">
+                        <h3>Team Member 2</h3>
+                        <p>Description of Team Member 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-box">
+                    <div class="member-image-placeholder"></div>
+                    <div class="member-details">
+                        <h3>Team Member 3</h3>
+                        <p>Description of Team Member 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<section id="contact">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Have questions, suggestions, or want to get involved? We'd love to hear from you.</p>
+
+        <div class="contact-info">
+            <div class="contact-person">
+                <h3>Contact Person 1</h3>
+                <p>Designation: </p>
+                <p>Phone: xyz</p>
+            </div>
+            <div class="contact-person">
+                <h3>Contact Person 2</h3>
+                <p>Designation: </p>
+                <p>Phone: xyz</p>
+            </div>
+            <div class="contact-person">
+                <h3>Contact Person 3</h3>
+                <p>Designation: </p>
+                <p>Phone: xyz</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <p>&copy; 2023 Alumni Cell, IIT Indore</p>
+    </footer>
+    <script>
+        window.onscroll = function() {
+            const missionBoxes = document.querySelectorAll(".mission-box");
+            
+            missionBoxes.forEach(function(box) {
+                const boxPosition = box.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                
+                if (boxPosition.top < windowHeight * 0.7) {
+                    box.classList.add("animate");
+                }
+            });
+        };
+        let headdd = document.querySelector('.headdd');
+
+        function handleScroll() {
+            const triggerPosition = window.innerHeight / 2;
+
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > triggerPosition) {
+                headdd.classList.remove('hidden');
+                headdd.classList.add('visible');
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        handleScroll();
+    </script>
+  </body>
+</html>
